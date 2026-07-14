@@ -8,14 +8,26 @@ Merged best content from:
 ## Files
 | File | Purpose |
 |------|---------|
-| `Sooraj_Kumar_Resume.tex` | Overleaf / pdfLaTeX source (use this) |
-| `Sooraj_Kumar_Resume.pdf` | Locally compiled preview (2 pages) |
+| `Sooraj_Kumar_Resume.tex` | General ATS Overleaf source |
+| `Sooraj_Kumar_Resume.pdf` | General preview (2 pages) |
+| `Sooraj_Kumar_10Pearls_Redis_Backend.tex` | **10Pearls JD1** — Redis & Backend Principal/Staff Consultant |
+| `Sooraj_Kumar_10Pearls_Redis_Backend.pdf` | JD1 preview (2 pages) |
+| `Sooraj_Kumar_10Pearls_Java_AWS.tex` | **10Pearls JD2** — Java Spring Boot / cloud-native microservices |
+| `Sooraj_Kumar_10Pearls_Java_AWS.pdf` | JD2 preview (2 pages) |
 
 ## How to use on Overleaf
 1. Create a new Blank Project on [Overleaf](https://www.overleaf.com)
-2. Replace `main.tex` contents with `Sooraj_Kumar_Resume.tex`
+2. Replace `main.tex` contents with the relevant `.tex` file
 3. Compiler: **pdfLaTeX**
 4. Download PDF and submit
+
+### Which file for which 10Pearls role?
+| Job | File |
+|-----|------|
+| Principal/Staff Software Consultant – Redis \& Backend | `Sooraj_Kumar_10Pearls_Redis_Backend.tex` |
+| Java Developer (Spring Boot / Micronaut / AWS / MySQL / Oracle) | `Sooraj_Kumar_10Pearls_Java_AWS.tex` |
+
+**Honesty notes (intentional):** Redis Cluster/Sentinel and deep Micronaut/.NET are **not** claimed as production expertise (not in your source resumes). Quarkus is positioned as the cloud-native Java stack you actually shipped; AWS is framed as working knowledge vs Azure hands-on. Redis caching, Kafka/queues, Java/Spring, Oracle/MySQL, K8s, mentoring/interviews are emphasized where true.
 
 ## Links included (from AI-Enabled resume)
 - Phone: `+92-311-0138020`

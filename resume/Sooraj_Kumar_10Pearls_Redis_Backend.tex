@@ -1,0 +1,225 @@
+%---------------------------------------------------------------------
+% Sooraj Kumar — Tailored for 10Pearls
+% Role: Principal/Staff Software Consultant – Redis & Backend Engineering
+% ATS-optimized | 2 pages max | pdfLaTeX / Overleaf
+% Links: AI-Enabled Google Doc resume
+%---------------------------------------------------------------------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{xcolor}
+
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.15in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.15in}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{5pt}
+\raggedbottom
+\raggedright
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    {\Huge\color{accentTitle} #1}
+    \vspace{4pt}\\
+    {\normalsize\color{accentText}\textbf{Senior Backend Engineer} \textbar\ Redis, Caching \& High-Performance Distributed Systems}
+    \vspace{6pt}
+    {\color{accentLine} \hrule}
+    \vspace{3pt}
+    \footnotesize{#2}
+    \vspace{3pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+\newcommand{\documentFooter}[1]{
+  \setlength{\footskip}{10.25pt}
+  \fancyfoot[C]{\footnotesize #1}
+}
+
+\newcommand{\numberedPages}{
+  \documentFooter{\thepage/\pageref{LastPage}}
+}
+
+\titleformat{\section}{
+  \vspace{-4pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule\vspace{1pt}]
+
+\newcommand{\tinysection}[1]{
+  \phantomsection
+  \addcontentsline{toc}{section}{#1}
+  {\large{\bfseries\color{accentText}#1} {\color{accentLine} |}}
+}
+
+\newcommand{\heading}[2]{
+  \hspace{8pt}#1\hfill#2\\
+}
+
+\newcommand{\headingBf}[2]{
+  \heading{\textbf{#1}}{\textbf{#2}}
+}
+
+\newcommand{\headingIt}[2]{
+  \heading{\textit{#1}}{\textit{#2}}
+}
+
+\newenvironment{resume_list}{
+  \vspace{-6pt}
+  \begin{itemize}[itemsep=-1px, parsep=0.5pt, topsep=1pt, leftmargin=22pt]
+}{
+  \end{itemize}
+  \vspace{-2pt}
+}
+
+\renewcommand\labelitemi{--}
+
+\begin{document}
+\numberedPages
+
+\documentTitle{Sooraj Kumar}{
+  \href{tel:+923110138020}{+92-311-0138020} ~$|$~
+  \href{mailto:soorajbinary@gmail.com}{soorajbinary@gmail.com} ~$|$~
+  \href{https://www.linkedin.com/in/soorajb2a/}{LinkedIn} ~$|$~
+  \href{https://github.com/sooraj671}{GitHub} ~$|$~
+  \href{https://www.hackerrank.com/profile/sooraj_bcss19}{HackerRank} ~$|$~
+  Karachi, Pakistan
+}
+
+%-----------SUMMARY-----------
+\tinysection{Professional Summary}
+\vspace{3pt}
+\hspace{8pt}\begin{minipage}{\dimexpr\linewidth-8pt}
+Backend engineer with \textbf{5+ years} designing high-throughput, low-latency systems for enterprise and \textbf{fintech} platforms. Hands-on production experience with \textbf{Redis} caching strategies that reduce database load and raise system throughput, plus deep work in \textbf{Java}/\textbf{Spring Boot}/\textbf{Quarkus} microservices, event-driven messaging (\textbf{Kafka}, \textbf{RabbitMQ}, \textbf{Artemis}), and cloud-native delivery on \textbf{Docker}/\textbf{Kubernetes}/\textbf{Azure}. Strong focus on performance tuning, observability, and resilient distributed architecture for mission-critical workloads.
+\end{minipage}
+\vspace{2pt}
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{resume_list}
+  \item \textbf{Redis \& Caching:} Redis (production), caching strategies, TTL/eviction patterns, cache-aside \& write-through, throughput optimization, memory-conscious data modeling, Pub/Sub-style async patterns via messaging brokers
+  \item \textbf{Backend:} Java~21, Spring Boot, Quarkus, Hibernate, Spring Security, Microservices, Node.js, REST APIs, Java~EE
+  \item \textbf{Distributed Systems:} Apache Kafka, RabbitMQ, Artemis, event-driven architecture, rate limiting \& queue patterns, high-availability design, horizontal scaling
+  \item \textbf{Data:} Redis, MySQL, PostgreSQL, DB2, Oracle, SQL Server, MongoDB, indexing \& query optimization
+  \item \textbf{Cloud \& DevOps:} Azure, Docker, Kubernetes, Jenkins, GitHub Actions, CI/CD, Maven, AWS (Basic), Infrastructure automation familiarity
+  \item \textbf{Observability:} ELK Stack, Grafana, Prometheus, distributed tracing, cache/API performance troubleshooting, load testing
+  \item \textbf{Security \& Quality:} OAuth~2.0, JWT, RBAC, JUnit, SonarQube, JaCoCo, Agile collaboration \& code reviews
+\end{resume_list}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+
+\headingBf{\href{https://contour-software.com/}{Contour Software}}{Feb 2026 -- Present}
+\headingIt{Senior Software Engineer --- Backend / Fintech Platforms}{Karachi, Pakistan}
+\begin{resume_list}
+  \item Designing enterprise-scale fintech backends focused on \textbf{performance}, reliability, and scalable distributed architecture
+  \item Architecting \textbf{Java~21}/\textbf{Spring Boot} microservices for high-volume financial transaction processing
+  \item Building event-driven systems with \textbf{Kafka} and async messaging to improve throughput and service decoupling
+  \item Strengthening production resilience through observability, distributed tracing, and performance-oriented telemetry
+  \item Partnering with engineers in architecture discussions; conducting technical interviews across backend and cloud stacks
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{\href{https://www.linkedin.com/company/genesisaico/}{Genesis AI}}{May 2025 -- Jan 2026}
+\headingIt{Full Stack Engineer (Java \& Angular)}{Texas, USA (Remote)}
+\begin{resume_list}
+  \item Built and maintained secure \textbf{Spring Boot} microservices and REST APIs for Open Finance / Open Banking platforms
+  \item Integrated \textbf{Kafka} for event-driven communication between services, improving scalability under concurrent load
+  \item Applied OAuth~2.0, OpenID Connect, and JWT to protect high-value API traffic across distributed backends
+  \item Diagnosed production bottlenecks, optimized API latency, and improved reliability for client-facing workloads
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{\href{https://teresol.com/}{Teresol Pvt.\ Ltd.}}{Nov 2023 -- May 2025}
+\headingIt{Software Design Engineer --- Core Banking (Redis \& Distributed Backends)}{Karachi, Pakistan}
+\begin{resume_list}
+  \item Designed and implemented \textbf{Redis caching strategies} that significantly improved system throughput and reduced database load on high-traffic core-banking services
+  \item Modeled cache keys/TTLs and read-path optimizations to keep hot data in memory for low-latency financial operations
+  \item Built asynchronous, event-driven workflows with \textbf{Artemis} (distributed messaging/queues) for decoupled service communication
+  \item Delivered \textbf{Quarkus} microservices integrated with Redis and relational data stores; enforced API gateway security (OAuth2/JWT)
+  \item Containerized services with \textbf{Docker}/\textbf{Kubernetes} auto-scaling; automated CI/CD via Jenkins and GitHub Actions
+  \item Monitored and tuned production performance using \textbf{ELK}, Grafana, and Prometheus; investigated cache/DB bottlenecks under load
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{Perfekt Solutions Ltd.}{Jan 2020 -- Jun 2023}
+\headingIt{Backend Developer}{Sukkur, Pakistan}
+\begin{resume_list}
+  \item Developed Spring-based REST backends and optimized SQL/transactions on Oracle DB and SQL Server for regulated environments
+  \item Applied data-structure-aware design (indexes, query plans, caching-friendly access patterns) to improve application responsiveness
+  \item Automated Maven/Jenkins CI pipelines; added logging, monitoring, and JUnit coverage to stabilize releases
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{Fiverr --- Freelance}{Jan 2020 -- May 2024}
+\headingIt{Java \& Spring Boot Developer}{Remote}
+\begin{resume_list}
+  \item Delivered production Java/Spring Boot backends for international clients, emphasizing maintainable APIs and performance-conscious design
+\end{resume_list}
+
+%-----------PROJECTS-----------
+\section{Selected Projects}
+
+\headingBf{\href{https://www.constellationpayments.com/}{Constellation Payments --- CSIPay \& Pyxis (PayFac / Gateway)}}{Global}
+\begin{resume_list}
+  \item Built high-volume payment facilitator/gateway services with TypeScript, Java~EE, and microservice architecture
+  \item Integrated cloud messaging for horizontal scalability, reliability, and low-latency settlement/reconciliation flows
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{BAHL Core Banking System Revamp}{Pakistan}
+\begin{resume_list}
+  \item Modernized legacy core banking into distributed \textbf{Quarkus} microservices with \textbf{Redis}-backed performance optimizations
+  \item Supported \textbf{10,000+} ACID-compliant financial transactions; deployed Docker/Kubernetes with horizontal auto-scaling
+  \item Tuned DB2 access layers and caching paths to sustain consistency with production-grade throughput
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{Enterprise Management Systems --- Open Finance Platform}{USA}
+\begin{resume_list}
+  \item Delivered Spring Boot REST APIs with Kafka-backed event scalability, OAuth~2.0/JWT controls, and multi-tenant RBAC
+\end{resume_list}
+
+%-----------EDUCATION-----------
+\section{Education}
+\headingBf{Sukkur IBA University}{Feb 2019 -- Aug 2023}
+\headingIt{Bachelor of Science in Computer Science}{Sukkur, Pakistan}
+\begin{resume_list}
+  \item \textbf{Four-year fully funded scholarship} --- shortlisted among top 100 candidates nationwide
+  \item Coursera: Data Structures and Performance; Advanced Data Structures in Java
+\end{resume_list}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\begin{resume_list}
+  \item Problem Solving (\href{https://www.hackerrank.com/profile/sooraj_bcss19}{HackerRank}) ~$|$~ GitHub Foundations ~$|$~ Artificial Intelligence Foundation
+  \item Security Awareness ~$|$~ HIPAA Business Associates ~$|$~ GDPR Data Protection ~$|$~ AML ~$|$~ Credit Card Security
+\end{resume_list}
+
+\end{document}

@@ -1,0 +1,224 @@
+%---------------------------------------------------------------------
+% Sooraj Kumar — Tailored for 10Pearls
+% Role: Java Developer (Spring Boot, Micronaut-adjacent, AWS, MySQL, Oracle)
+% ATS-optimized | 2 pages max | pdfLaTeX / Overleaf
+% Links: AI-Enabled Google Doc resume
+%---------------------------------------------------------------------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{xcolor}
+
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.15in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.15in}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{5pt}
+\raggedbottom
+\raggedright
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    {\Huge\color{accentTitle} #1}
+    \vspace{4pt}\\
+    {\normalsize\color{accentText}\textbf{Senior Java Backend Engineer} \textbar\ Spring Boot, Microservices \& Cloud-Native APIs}
+    \vspace{6pt}
+    {\color{accentLine} \hrule}
+    \vspace{3pt}
+    \footnotesize{#2}
+    \vspace{3pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+\newcommand{\documentFooter}[1]{
+  \setlength{\footskip}{10.25pt}
+  \fancyfoot[C]{\footnotesize #1}
+}
+
+\newcommand{\numberedPages}{
+  \documentFooter{\thepage/\pageref{LastPage}}
+}
+
+\titleformat{\section}{
+  \vspace{-4pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule\vspace{1pt}]
+
+\newcommand{\tinysection}[1]{
+  \phantomsection
+  \addcontentsline{toc}{section}{#1}
+  {\large{\bfseries\color{accentText}#1} {\color{accentLine} |}}
+}
+
+\newcommand{\heading}[2]{
+  \hspace{8pt}#1\hfill#2\\
+}
+
+\newcommand{\headingBf}[2]{
+  \heading{\textbf{#1}}{\textbf{#2}}
+}
+
+\newcommand{\headingIt}[2]{
+  \heading{\textit{#1}}{\textit{#2}}
+}
+
+\newenvironment{resume_list}{
+  \vspace{-6pt}
+  \begin{itemize}[itemsep=-1px, parsep=0.5pt, topsep=1pt, leftmargin=22pt]
+}{
+  \end{itemize}
+  \vspace{-2pt}
+}
+
+\renewcommand\labelitemi{--}
+
+\begin{document}
+\numberedPages
+
+\documentTitle{Sooraj Kumar}{
+  \href{tel:+923110138020}{+92-311-0138020} ~$|$~
+  \href{mailto:soorajbinary@gmail.com}{soorajbinary@gmail.com} ~$|$~
+  \href{https://www.linkedin.com/in/soorajb2a/}{LinkedIn} ~$|$~
+  \href{https://github.com/sooraj671}{GitHub} ~$|$~
+  \href{https://www.hackerrank.com/profile/sooraj_bcss19}{HackerRank} ~$|$~
+  Karachi, Pakistan
+}
+
+%-----------SUMMARY-----------
+\tinysection{Professional Summary}
+\vspace{3pt}
+\hspace{8pt}\begin{minipage}{\dimexpr\linewidth-8pt}
+Senior Java backend engineer with \textbf{5+ years} designing and delivering scalable \textbf{Spring Boot} and cloud-native microservices (\textbf{Quarkus}) for fintech and enterprise platforms. Strong in \textbf{RESTful APIs}, \textbf{Hibernate/JPA}, \textbf{MySQL}/\textbf{Oracle}, security (OAuth~2.0/JWT), and CI/CD with \textbf{Docker}/\textbf{Kubernetes}. Experienced mentoring engineers, guiding technical decisions, and collaborating across teams with a consulting mindset---focused on performance, security, maintainability, and production reliability.
+\end{minipage}
+\vspace{2pt}
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{resume_list}
+  \item \textbf{Java \& Frameworks:} Java~21, Spring Boot, Quarkus (cloud-native microservices; Micronaut-adjacent stack), Hibernate, JPA, Spring Security, Java~EE, AOP
+  \item \textbf{APIs \& Architecture:} RESTful APIs, OpenAPI/Swagger, Microservices, Event-Driven Architecture, Domain-Driven Design, Clean Architecture
+  \item \textbf{Databases \& ORM:} MySQL, Oracle DB, PostgreSQL, DB2, SQL Server, MongoDB, Hibernate/JPA, Liquibase, query \& transaction optimization
+  \item \textbf{Cloud \& Containers:} Azure (hands-on), AWS (Lambda/S3/ECS-style cloud patterns --- working knowledge), Docker, Kubernetes, Maven, Jenkins, GitHub Actions, CI/CD
+  \item \textbf{Messaging \& Cache:} Apache Kafka, RabbitMQ, Artemis, Redis
+  \item \textbf{Observability \& Quality:} ELK Stack, Grafana, Prometheus, distributed tracing, JaCoCo, SonarQube, JUnit, secure coding \& testing practices
+  \item \textbf{Leadership:} Mentoring, technical interviews/recruiting support, code reviews, cross-team technical point-of-contact
+\end{resume_list}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+
+\headingBf{\href{https://contour-software.com/}{Contour Software}}{Feb 2026 -- Present}
+\headingIt{Senior Software Engineer --- Principal Backend Contributor}{Karachi, Pakistan}
+\begin{resume_list}
+  \item Serving as a senior/principal engineer on enterprise fintech platforms---driving design, implementation, and performance of backend services
+  \item Architecting \textbf{Java~21}/\textbf{Spring Boot} microservices and scalable APIs for high-volume financial transaction processing
+  \item Coordinating with architects and product stakeholders on requirements, technical design, and delivery trade-offs
+  \item Mentoring through technical interviews and candidate evaluation across backend, database, and cloud technologies
+  \item Acting as a technical point of contact for reliability issues; improving observability and production troubleshooting practices
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{\href{https://www.linkedin.com/company/genesisaico/}{Genesis AI}}{May 2025 -- Jan 2026}
+\headingIt{Full Stack Engineer (Java \& Angular)}{Texas, USA (Remote)}
+\begin{resume_list}
+  \item Designed, developed, and maintained secure \textbf{Spring Boot} microservices and \textbf{RESTful APIs} for Open Finance platforms
+  \item Implemented OAuth~2.0, OpenID Connect, and JWT for authentication/authorization across API-driven services
+  \item Integrated \textbf{Kafka} for event-driven microservice communication; optimized API performance and production reliability
+  \item Collaborated with cross-functional teams on design alternatives, incident response, and maintainable service boundaries
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{\href{https://teresol.com/}{Teresol Pvt.\ Ltd.}}{Nov 2023 -- May 2025}
+\headingIt{Software Design Engineer --- Core Banking Microservices}{Karachi, Pakistan}
+\begin{resume_list}
+  \item Principal developer on core-banking modernization using \textbf{Quarkus} microservices (lightweight, cloud-native Java comparable to Micronaut-style stacks)
+  \item Built REST backends with Hibernate-style data access, Redis caching, and Artemis messaging for scalable, resilient services
+  \item Optimized relational workloads (DB2) for ACID financial transactions; enforced API security via OAuth2/JWT at the gateway
+  \item Containerized and orchestrated services with \textbf{Docker}/\textbf{Kubernetes}; owned CI/CD automation (Jenkins, GitHub Actions)
+  \item Led production support using \textbf{ELK}, Grafana, and Prometheus; planned fixes for bottlenecks and guided junior engineers on debugging
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{Perfekt Solutions Ltd.}{Jan 2020 -- Jun 2023}
+\headingIt{Backend Developer (Java / Spring / Oracle)}{Sukkur, Pakistan}
+\begin{resume_list}
+  \item Developed Spring MVC/REST backends with Hibernate and role-based Spring Security for regulated business applications
+  \item Built and tuned SQL, stored procedures, and transactions on \textbf{Oracle DB} and SQL Server; worked with MySQL-class relational patterns
+  \item Established Maven/Jenkins CI, unit/integration testing with JUnit, and collaborative Agile delivery with frontend teams
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{Fiverr --- Freelance}{Jan 2020 -- May 2024}
+\headingIt{Java \& Spring Boot Developer}{Remote}
+\begin{resume_list}
+  \item Delivered Spring Boot and Java EE/Hibernate backends for international clients; practiced consulting-style requirement clarification and delivery ownership
+\end{resume_list}
+
+%-----------PROJECTS-----------
+\section{Selected Projects}
+
+\headingBf{\href{https://www.constellationpayments.com/}{Constellation Payments --- CSIPay \& Pyxis}}{Global}
+\begin{resume_list}
+  \item Built PayFac/Payment Gateway microservices with TypeScript and Java~EE; cloud deployment with messaging for high-volume settlement flows
+  \item Conducted thorough PR reviews and upheld secure, maintainable coding standards across the team
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{BAHL Core Banking System Revamp}{Pakistan}
+\begin{resume_list}
+  \item Led modernization of legacy core banking to distributed \textbf{Quarkus} microservices supporting \textbf{10,000+} ACID transactions
+  \item Implemented transaction-safe data access, Docker/Kubernetes auto-scaling, and CI/CD quality gates for production stability
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{Enterprise Management Systems --- Open Finance Platform}{USA}
+\begin{resume_list}
+  \item Delivered Spring Boot REST APIs with OpenAPI/Swagger, OAuth~2.0/JWT, Kafka scalability, and multi-tenant RBAC/audit logging
+\end{resume_list}
+
+%-----------EDUCATION-----------
+\section{Education}
+\headingBf{Sukkur IBA University}{Feb 2019 -- Aug 2023}
+\headingIt{Bachelor of Science in Computer Science}{Sukkur, Pakistan}
+\begin{resume_list}
+  \item \textbf{Four-year fully funded scholarship} --- shortlisted among top 100 candidates nationwide
+  \item Leadership programs: Youth Impact Wilderness Camping; Young Leader's Conference (YLC)
+\end{resume_list}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\begin{resume_list}
+  \item GitHub Foundations ~$|$~ Problem Solving (\href{https://www.hackerrank.com/profile/sooraj_bcss19}{HackerRank}) ~$|$~ Artificial Intelligence Foundation
+  \item Security Awareness ~$|$~ HIPAA Business Associates ~$|$~ GDPR ~$|$~ AML ~$|$~ Credit Card Security
+  \item Data Structures and Performance \& Advanced Data Structures in Java (Coursera)
+\end{resume_list}
+
+\end{document}
