@@ -8,12 +8,13 @@ Merged best content from:
 ## Files
 | File | Purpose |
 |------|---------|
-| `Sooraj_Kumar_Resume.tex` | General ATS Overleaf source |
-| `Sooraj_Kumar_Resume.pdf` | General preview (2 pages) |
+| `Sooraj_Kumar_Resume_2Page.tex` | **General 2-page** Overleaf source (recommended default) |
+| `Sooraj_Kumar_Resume_2Page.pdf` | 2-page preview |
+| `Sooraj_Kumar_Resume_1Page.tex` | **General 1-page** Overleaf source (quick applications / ATS portals) |
+| `Sooraj_Kumar_Resume_1Page.pdf` | 1-page preview |
+| `Sooraj_Kumar_Resume.tex` | Earlier general ATS source (same content family as 2-page) |
 | `Sooraj_Kumar_10Pearls_Redis_Backend.tex` | **10Pearls JD1** — Redis & Backend Principal/Staff Consultant |
-| `Sooraj_Kumar_10Pearls_Redis_Backend.pdf` | JD1 preview (2 pages) |
 | `Sooraj_Kumar_10Pearls_Java_AWS.tex` | **10Pearls JD2** — Java Spring Boot / cloud-native microservices |
-| `Sooraj_Kumar_10Pearls_Java_AWS.pdf` | JD2 preview (2 pages) |
 
 ## How to use on Overleaf
 1. Create a new Blank Project on [Overleaf](https://www.overleaf.com)
