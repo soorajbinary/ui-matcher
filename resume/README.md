@@ -14,6 +14,8 @@ Merged best content from:
 | `Sooraj_Kumar_Resume_1Page.pdf` | 1-page preview |
 | `Sooraj_Kumar_Resume_FullStack_AI_Web.tex` | **Full-stack + AI web JD** (2-page) — React/TS/APIs/AI-enabled apps |
 | `Sooraj_Kumar_Resume_FullStack_AI_Web.pdf` | Full-stack AI web preview |
+| `Sooraj_Kumar_Resume_Java_Spring_OPA.tex` | **Java/Spring Boot cloud-native JD** (2-page) — title kept (AI workflows) |
+| `Sooraj_Kumar_Resume_Java_Spring_OPA.pdf` | Java Spring remote contract preview |
 | `Sooraj_Kumar_Resume.tex` | Earlier general ATS source (same content family as 2-page) |
 | `Sooraj_Kumar_10Pearls_Redis_Backend.tex` | **10Pearls JD1** — Redis & Backend Principal/Staff Consultant |
 | `Sooraj_Kumar_10Pearls_Java_AWS.tex` | **10Pearls JD2** — Java Spring Boot / cloud-native microservices |
