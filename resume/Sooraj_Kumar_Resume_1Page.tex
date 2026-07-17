@@ -1,0 +1,145 @@
+%---------------------------------------------------------------------
+% Sooraj Kumar — Senior Software Engineer (1-PAGE Overleaf)
+% ATS-optimized | pdfLaTeX | Links from AI-Enabled Google Doc resume
+%---------------------------------------------------------------------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+\pagestyle{empty}
+\urlstyle{same}
+
+\addtolength{\oddsidemargin}{-0.68in}
+\addtolength{\evensidemargin}{-0.52in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.65in}
+\addtolength{\textheight}{1.28in}
+
+\setlength{\tabcolsep}{0pt}
+\raggedbottom
+\raggedright
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    {\LARGE\color{accentTitle} #1}
+    \vspace{1pt}\\
+    {\small\color{accentText}\textbf{Senior Software Engineer} \textbar\ Java, Spring Boot, Quarkus, Redis, Kafka, Fintech}
+    \vspace{3pt}
+    {\color{accentLine} \hrule}
+    \vspace{2pt}
+    \footnotesize{#2}
+    \vspace{2pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+\titleformat{\section}{
+  \vspace{-3pt}
+  \color{accentText}
+  \raggedright\normalsize\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule\vspace{1pt}]
+
+\newcommand{\tinysection}[1]{
+  {\normalsize{\bfseries\color{accentText}#1} {\color{accentLine} |}}
+}
+
+\newcommand{\heading}[2]{
+  \hspace{6pt}#1\hfill#2\\[-1pt]
+}
+
+\newcommand{\headingBf}[2]{
+  \heading{\textbf{#1}}{\textbf{#2}}
+}
+
+\newenvironment{resume_list}{
+  \vspace{-2pt}
+  \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=1pt, leftmargin=14pt]
+}{
+  \end{itemize}
+  \vspace{1pt}
+}
+
+\renewcommand\labelitemi{--}
+
+\begin{document}
+\small
+
+\documentTitle{Sooraj Kumar}{
+  \href{tel:+923110138020}{+92-311-0138020} ~$|$~
+  \href{mailto:soorajbinary@gmail.com}{soorajbinary@gmail.com} ~$|$~
+  \href{https://www.linkedin.com/in/soorajb2a/}{LinkedIn} ~$|$~
+  \href{https://github.com/sooraj671}{GitHub} ~$|$~
+  \href{https://www.hackerrank.com/profile/sooraj_bcss19}{HackerRank} ~$|$~
+  Karachi, Pakistan
+}
+
+\tinysection{Summary}
+\vspace{2pt}
+\hspace{6pt}\begin{minipage}{\dimexpr\linewidth-6pt}
+Senior Software Engineer with \textbf{5+ years} building scalable backend systems for \textbf{fintech} and enterprise platforms. Strong in \textbf{Java~21}, \textbf{Spring Boot}, \textbf{Quarkus}, \textbf{Redis}, \textbf{Kafka}, and cloud-native delivery on \textbf{Docker}/\textbf{Kubernetes}/\textbf{Azure}. Experienced with Open Banking APIs, LLM-powered automation, and high-volume ACID transaction systems.
+\end{minipage}
+\vspace{2pt}
+
+\section{Skills}
+\begin{resume_list}
+  \item \textbf{Backend:} Java~21, Spring Boot, Quarkus, Hibernate, Microservices, REST, OAuth~2.0/JWT, Node.js
+  \item \textbf{Data \& Messaging:} Redis, Kafka, RabbitMQ, Artemis, MySQL, PostgreSQL, DB2, Oracle, MongoDB
+  \item \textbf{Cloud / DevOps / AI:} Azure, Docker, Kubernetes, Jenkins, GitHub Actions, CI/CD, ELK, Grafana, OpenAI/LangChain
+\end{resume_list}
+
+\section{Experience}
+
+\headingBf{\href{https://contour-software.com/}{Contour Software} --- Senior Software Engineer}{Feb 2026 -- Present}
+\begin{resume_list}
+  \item Architecting \textbf{Java~21}/\textbf{Spring Boot} fintech microservices for high-volume financial transactions
+  \item Building event-driven backends with \textbf{Kafka}; integrating AI-assisted automation; conducting technical interviews
+\end{resume_list}
+
+\headingBf{\href{https://www.linkedin.com/company/genesisaico/}{Genesis AI} --- Full Stack Engineer (Java \& Angular)}{May 2025 -- Jan 2026}
+\begin{resume_list}
+  \item Built secure \textbf{Spring Boot} Open Finance APIs with OAuth~2.0, OIDC, JWT, and \textbf{Kafka} event pipelines
+  \item Embedded LLM automation; delivered Angular dashboards; optimized API latency and production reliability
+\end{resume_list}
+
+\headingBf{\href{https://teresol.com/}{Teresol Pvt.\ Ltd.} --- Software Design Engineer (Core Banking)}{Nov 2023 -- May 2025}
+\begin{resume_list}
+  \item Built \textbf{Quarkus} core-banking microservices with \textbf{Redis} caching and Artemis async workflows
+  \item Deployed Docker/Kubernetes with CI/CD; tuned DB2 ACID paths; monitored via ELK, Grafana, Prometheus
+\end{resume_list}
+
+\headingBf{Perfekt Solutions Ltd.\ --- Backend Developer}{Jan 2020 -- Jun 2023}
+\begin{resume_list}
+  \item Developed Spring REST APIs with RBAC security; optimized Oracle/SQL Server transactions; automated Maven/Jenkins CI
+\end{resume_list}
+
+\section{Projects}
+
+\headingBf{\href{https://www.constellationpayments.com/}{Constellation Payments --- CSIPay \& Pyxis}}{Global}
+\begin{resume_list}
+  \item Built PayFac/Payment Gateway microservices (TypeScript, Java~EE) with cloud messaging for high-volume settlement
+\end{resume_list}
+
+\headingBf{BAHL Core Banking System Revamp}{Pakistan}
+\begin{resume_list}
+  \item Modernized legacy core banking to \textbf{Quarkus} microservices supporting \textbf{10,000+} ACID transactions on Docker/K8s
+\end{resume_list}
+
+\section{Education \& Certifications}
+\headingBf{B.S.\ Computer Science --- Sukkur IBA University}{2019 -- 2023}
+\begin{resume_list}
+  \item Fully funded 4-year scholarship (top 100 nationwide) ~$|$~ AI Foundation, HIPAA, GDPR, AML, Credit Card Security, GitHub Foundations
+\end{resume_list}
+
+\end{document}

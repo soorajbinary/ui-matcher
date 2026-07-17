@@ -1,0 +1,234 @@
+%---------------------------------------------------------------------
+% Sooraj Kumar — Senior Software Engineer (2-PAGE Overleaf)
+% ATS-optimized | pdfLaTeX | Links from AI-Enabled Google Doc resume
+%---------------------------------------------------------------------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{xcolor}
+
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.15in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.15in}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{5pt}
+\raggedbottom
+\raggedright
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    {\Huge\color{accentTitle} #1}
+    \vspace{4pt}\\
+    {\normalsize\color{accentText}\textbf{Senior Software Engineer} \textbar\ Building Intelligent Systems with AI-Accelerated Workflows}
+    \vspace{6pt}
+    {\color{accentLine} \hrule}
+    \vspace{3pt}
+    \footnotesize{#2}
+    \vspace{3pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+\newcommand{\documentFooter}[1]{
+  \setlength{\footskip}{10.25pt}
+  \fancyfoot[C]{\footnotesize #1}
+}
+
+\newcommand{\numberedPages}{
+  \documentFooter{\thepage/\pageref{LastPage}}
+}
+
+\titleformat{\section}{
+  \vspace{-4pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule\vspace{1pt}]
+
+\newcommand{\tinysection}[1]{
+  \phantomsection
+  \addcontentsline{toc}{section}{#1}
+  {\large{\bfseries\color{accentText}#1} {\color{accentLine} |}}
+}
+
+\newcommand{\heading}[2]{
+  \hspace{8pt}#1\hfill#2\\
+}
+
+\newcommand{\headingBf}[2]{
+  \heading{\textbf{#1}}{\textbf{#2}}
+}
+
+\newcommand{\headingIt}[2]{
+  \heading{\textit{#1}}{\textit{#2}}
+}
+
+\newenvironment{resume_list}{
+  \vspace{-6pt}
+  \begin{itemize}[itemsep=-1px, parsep=0.5pt, topsep=1pt, leftmargin=22pt]
+}{
+  \end{itemize}
+  \vspace{-2pt}
+}
+
+\renewcommand\labelitemi{--}
+
+\begin{document}
+\numberedPages
+
+\documentTitle{Sooraj Kumar}{
+  \href{tel:+923110138020}{+92-311-0138020} ~$|$~
+  \href{mailto:soorajbinary@gmail.com}{soorajbinary@gmail.com} ~$|$~
+  \href{https://www.linkedin.com/in/soorajb2a/}{LinkedIn} ~$|$~
+  \href{https://github.com/sooraj671}{GitHub} ~$|$~
+  \href{https://www.hackerrank.com/profile/sooraj_bcss19}{HackerRank} ~$|$~
+  Karachi, Pakistan
+}
+
+\tinysection{Professional Summary}
+\vspace{3pt}
+\hspace{8pt}\begin{minipage}{\dimexpr\linewidth-8pt}
+Senior Software Engineer with \textbf{5+ years} building high-performance backend and full-stack systems for \textbf{fintech}, Open Banking, and enterprise platforms. Expert in \textbf{Java~21}, \textbf{Spring Boot}, \textbf{Quarkus}, and event-driven architectures using \textbf{Kafka}, \textbf{RabbitMQ}, \textbf{Redis}, and containerized services on \textbf{Azure}/\textbf{Kubernetes}. Actively shipping \textbf{LLM-powered automation}, AI-assisted analytics, and intelligent document workflows inside production systems---delivering measurable reliability, throughput, and developer velocity gains.
+\end{minipage}
+\vspace{2pt}
+
+\section{Technical Skills}
+\begin{resume_list}
+  \item \textbf{Languages:} Java~21, TypeScript, JavaScript, Python, SQL, Dart, Kotlin
+  \item \textbf{Backend:} Spring Boot, Quarkus, Hibernate, Spring Security, Microservices, Java~EE, FastAPI, Node.js
+  \item \textbf{AI / LLM:} OpenAI APIs, LangChain, Whisper, RAG, LLM API Integration, Intelligent Automation
+  \item \textbf{Frontend:} Angular, React, Flutter, HTML5, CSS3, OpenAPI/Swagger
+  \item \textbf{Messaging \& Data:} Apache Kafka, RabbitMQ, Artemis, Redis, MySQL, PostgreSQL, DB2, MongoDB, Oracle, SQL Server, Liquibase
+  \item \textbf{Cloud \& DevOps:} Azure, Docker, Kubernetes, Jenkins, GitHub Actions, CI/CD, Maven, AWS (Basic)
+  \item \textbf{Observability \& Quality:} ELK, Grafana, Prometheus, JaCoCo, SonarQube, JUnit, Distributed Tracing
+  \item \textbf{Security:} OAuth~2.0, OpenID Connect, JWT, RBAC, GDPR/HIPAA/AML awareness
+\end{resume_list}
+
+\section{Professional Experience}
+
+\headingBf{\href{https://contour-software.com/}{Contour Software}}{Feb 2026 -- Present}
+\headingIt{Senior Software Engineer}{Karachi, Pakistan}
+\begin{resume_list}
+  \item Designing and evolving enterprise-scale \textbf{fintech} platforms focused on performance, reliability, and intelligent automation
+  \item Architecting distributed microservices with \textbf{Java~21} and \textbf{Spring Boot} for high-volume financial transaction processing
+  \item Building event-driven backends with \textbf{Kafka} and async messaging; strengthening observability via tracing and production telemetry
+  \item Integrating \textbf{AI-assisted workflows} and automation into fintech operations to accelerate delivery and reduce manual effort
+  \item Conducting technical interviews across backend, frontend, database, and cloud technologies
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{\href{https://www.linkedin.com/company/genesisaico/}{Genesis AI}}{May 2025 -- Jan 2026}
+\headingIt{Full Stack Engineer (Java \& Angular)}{Texas, USA (Remote)}
+\begin{resume_list}
+  \item Designed and maintained secure \textbf{Spring Boot} microservices for API-driven Open Finance / Open Banking platforms
+  \item Implemented RESTful APIs with \textbf{OAuth~2.0}, \textbf{OpenID Connect}, and \textbf{JWT} for authenticated, auditable data sharing
+  \item Integrated \textbf{Kafka} for event-driven service communication, improving decoupling and throughput
+  \item Embedded LLM APIs and automation pipelines to increase application intelligence and reduce operational toil
+  \item Delivered \textbf{Angular} dashboards for real-time visualization; diagnosed production issues and optimized API latency
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{\href{https://teresol.com/}{Teresol Pvt.\ Ltd.}}{Nov 2023 -- May 2025}
+\headingIt{Software Design Engineer --- Core Banking}{Karachi, Pakistan}
+\begin{resume_list}
+  \item Built scalable core-banking services with \textbf{Quarkus} microservices, hot reload, and clean modular boundaries
+  \item Implemented async, event-driven workflows via \textbf{Artemis}; applied \textbf{Redis} caching to raise throughput and cut DB load
+  \item Optimized \textbf{DB2} queries/indexing for ACID financial operations; enforced API security (OAuth2/JWT) at the gateway
+  \item Containerized services with \textbf{Docker}/\textbf{Kubernetes} auto-scaling; automated CI/CD with Jenkins and GitHub Actions
+  \item Drove observability with \textbf{ELK}, Grafana, and Prometheus; performed load testing and production incident support
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{Perfekt Solutions Ltd.}{Jan 2020 -- Jun 2023}
+\headingIt{Backend Developer}{Sukkur, Pakistan}
+\begin{resume_list}
+  \item Developed RESTful APIs and Spring-based backends using MVC, Singleton, and Factory patterns for maintainable systems
+  \item Secured applications with Spring Security (RBAC); optimized SQL, stored procedures, and transactions on Oracle DB / SQL Server
+  \item Automated builds/deployments with Maven and Jenkins; added logging, monitoring, and JUnit coverage for stable releases
+  \item Collaborated in Agile teams with frontend engineers (HTML/CSS/JS) on validated data exchange in regulated environments
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{Fiverr --- Freelance}{Jan 2020 -- May 2024}
+\headingIt{Java \& Spring Boot Developer}{Remote}
+\begin{resume_list}
+  \item Delivered production Spring Boot backends, Java EE/Hibernate web apps, and desktop solutions for international clients over 4+ years
+\end{resume_list}
+
+\section{Selected Projects}
+
+\headingBf{\href{https://www.constellationpayments.com/}{Constellation Payments --- CSIPay \& Pyxis (PayFac / Gateway)}}{Global}
+\begin{resume_list}
+  \item Built PayFac and Payment Gateway capabilities with TypeScript, Java~EE, and microservice architecture
+  \item Deployed cloud services with messaging for horizontal scale; designed settlement/reconciliation flows for high-volume payments
+  \item Upheld strong code quality through maintainable design and rigorous pull-request reviews
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{BAHL Core Banking System Revamp}{Pakistan}
+\begin{resume_list}
+  \item Modernized Bank Al-Habib's legacy (1996 Java Swing) core banking stack into a distributed \textbf{Quarkus} microservices platform
+  \item Supported \textbf{10,000+} ACID-compliant financial transactions with consistency guarantees and transaction-safe DB2 access
+  \item Built FSM middleware bridging Vue.js clients and backends; shipped Docker/Kubernetes deployments with CI/CD gates
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{Enterprise Management Systems --- Open Finance Platform}{USA}
+\begin{resume_list}
+  \item Delivered Spring Boot REST APIs with OpenAPI/Swagger docs, OAuth~2.0/JWT controls, and Kafka-backed event scalability
+  \item Enabled multi-tenant enterprise workflows with RBAC and audit logging aligned to Open Banking principles
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{LifeDox --- AI-Powered Digital Memoir Chatbot}{Mobile / AI}
+\begin{resume_list}
+  \item Built Flutter (Android/iOS) memoir app with OpenAI chat, Whisper speech-to-text, Firebase auth/storage, and automated PDF book generation
+\end{resume_list}
+
+\vspace{2pt}
+\headingBf{AI Document Analyzer (FasTech Systems Internship)}{Jul 2023 -- Aug 2023}
+\begin{resume_list}
+  \item Built end-to-end OpenAI + LangChain PDF analyzer on FastAPI for automated document extraction; deployed for real-time cloud inference
+\end{resume_list}
+
+\section{Education}
+\headingBf{Sukkur IBA University}{Feb 2019 -- Aug 2023}
+\headingIt{Bachelor of Science in Computer Science}{Sukkur, Pakistan}
+\begin{resume_list}
+  \item \textbf{Four-year fully funded scholarship} --- shortlisted among top 100 candidates nationwide for academic excellence
+  \item Selected for fully funded Youth Impact Wilderness Camping (65 nationwide) and Young Leader's Conference (YLC)
+\end{resume_list}
+
+\section{Certifications}
+\begin{resume_list}
+  \item Artificial Intelligence Foundation ~$|$~ GitHub Foundations ~$|$~ Problem Solving (\href{https://www.hackerrank.com/profile/sooraj_bcss19}{HackerRank})
+  \item Security Awareness Foundation \& Training ~$|$~ HIPAA: Business Associates ~$|$~ GDPR Data Protection
+  \item Anti-Money Laundering (AML) ~$|$~ Credit Card Security ~$|$~ Data Structures \& Advanced DS in Java (Coursera)
+\end{resume_list}
+
+\end{document}
